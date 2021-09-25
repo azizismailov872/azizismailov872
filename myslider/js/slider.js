@@ -22,6 +22,25 @@ downBtn.addEventListener('click',(event) => {
 	changeSlide('down');
 });
 
+document.addEventListener('keyup',(event) => {
+	if(event.keyCode === 38)
+	{
+		changeSlide('up');
+	}else if(event.keyCode === 	40)
+	{
+		changeSlide('down');
+	}
+});
+
+document.addEventListener('wheel',(event) => {
+	if (event.wheelDelta >= 0) {
+		changeSlide('up');
+    }
+    else {
+    	changeSlide('down');
+    }
+});
+
 function changeSlide(direction){
 	if(direction === 'up')
 	{
