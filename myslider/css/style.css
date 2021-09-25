@@ -1,0 +1,216 @@
+*
+{
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat','Arial',sans-serif;
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+
+.main-slide{
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: transform 0.5s ease-in-out;
+}
+
+.logo
+{
+	position: absolute;
+	top: 25px;
+	left: 30px;
+	color: #fff;
+	font-size: 26px;
+	font-weight: 900;
+}
+
+.sidebar
+{
+	width: 50%;
+	height: 100%;
+	top: 0;
+	position: absolute;
+	right: 0;
+	padding: 10px;
+	 transition: transform 0.5s ease-in-out;
+}
+
+
+.slide
+{	
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+  	background-size: cover;
+ 	background-position: center center;
+ 	border-top-right-radius: 20px;
+ 	border-bottom-right-radius: 20px;
+ 	display: flex;
+ 	align-items: flex-end;
+ 	padding: 15px;
+}
+
+.slide-content
+{
+	margin-bottom: 80px;
+	margin-left: 30px;
+	width: 100%;
+}
+
+.slide-sub-header
+{
+	color: #fff;
+	font-size: 26px;
+	font-weight: 200;
+	margin-bottom: 5px;
+}
+
+.slide-header
+{
+	color: #fff;
+	font-size: 32px;
+	margin-bottom: 15px;
+}
+
+.slide-button
+{
+	width: 250px;
+	font-size: 18px;
+	font-weight: bold;
+	min-height: 60px;
+	color: #1e1e1e;
+	background-color: #fff;
+	border-radius: 15px;
+	border: none;
+	padding: 10px;
+	cursor: pointer;
+}
+
+/*Sidebar*/
+.sidebar-item
+{	
+	width: 100%;
+	height: 100%;
+	padding-top: 35px;
+}
+
+/*Sidebar menu*/
+.sidebar-menu
+{	
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0;
+	padding-left: 15px;
+}
+
+.sidebar-menu li 
+{	
+	margin-right: 60px;
+	list-style: none;
+}
+
+.sidebar-menu li a 
+{
+	color: #1e1e1e;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+.sidebar-menu li a:hover
+{
+	color: #1e1e1e;
+}
+
+/*Body*/
+.body
+{
+	margin-top: 140px;
+	padding: 0;
+	padding-left: 15px;
+	padding-right: 10px;
+}
+
+.body h3
+{
+	color: #1e1e1e;
+	font-size: 26px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.body .images
+{
+	display: flex;
+	margin-top: 25px;
+}
+
+.body .images div
+{
+	flex: 1;
+	height: 160px;
+	background-repeat: no-repeat;
+  	background-size: cover;
+ 	background-position: center center;
+ 	border-radius: 15px;
+ 	cursor: pointer;
+}
+
+.body .images div:first-child
+{
+	margin-right: 15px;
+}
+
+
+/*Buttons*/
+.container .controls button {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 100;
+}
+
+.container .controls .down-button {
+  transform: translateX(-100%);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.container .controls .up-button {
+  transform: translateY(-100%);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.up-button, .down-button {
+  background-color: #fff;
+  border: none;
+  color: #aaa;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 15px;
+}
+
+.up-button
+{
+	background-color: transparent;
+	transition: background-color 0.2s linear;
+}
+
+.up-button:hover, .down-button:hover {
+  color: #222;
+  background-color: #fff;
+}
+
+.up-button:focus, .down-button:focus {
+  outline: none;
+}
+
